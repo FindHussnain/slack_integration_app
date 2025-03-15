@@ -1,0 +1,22 @@
+<div style="font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+  <h2 style="color: #333;">Hello, <%= @resource.email %>!</h2>
+
+  <p style="color: #555; font-size: 16px;">
+    Your account has been temporarily locked due to multiple unsuccessful sign-in attempts.
+  </p>
+
+  <p style="color: #777; font-size: 14px;">
+    To regain access, please click the button below to unlock your account:
+  </p>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <a href="<%= unlock_url(@resource, unlock_token: @token) %>" 
+       style="background-color: #d9534f; color: #fff; text-decoration: none; padding: 10px 15px; border-radius: 5px; display: inline-block;">
+      🔓 Unlock My Account
+    </a>
+  </div>
+
+  <p style="color: #999; font-size: 12px; text-align: center; margin-top: 20px;">
+    If you didn't attempt to sign in, please ensure your account security by changing your password after unlocking.
+  </p>
+</div>

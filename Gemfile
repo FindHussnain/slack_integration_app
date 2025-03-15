@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.7"
+ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5", ">= 7.1.5.1"
@@ -66,3 +66,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'pry'
+
+gem "devise", "~> 4.9"
+
+gem "tailwindcss-rails", "~> 2.0"
